@@ -16,7 +16,7 @@ setTimeout(()=>{
          screen.innerText="tap";
          startTime=Date.now();
          ready=true;
-},Math.random() *3000+2000);
+},Math.random() *1500+1000);
 screen.onclick=()=>{
     if(!ready) return;
     let time=Date.now()-startTime;
@@ -33,6 +33,7 @@ ready=false;
 
 };
     
+
 
 
 
