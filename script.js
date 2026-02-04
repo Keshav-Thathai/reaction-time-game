@@ -1,24 +1,33 @@
 let startTime;
 let ready = false;
 
+
 const screen = document.getElementById("screen");
 const startBtn = document.getElementById("start");
 const text = document.getElementById("text");
-startBtn.onclick=()=>{
+startBtn.onclick=function(){
     text.innerText="wait for green...";
     screen.style.background="red";
     screen.innerText="WAIT";
     ready=false;
 
-}
+
+
+
 setTimeout(()=>{
      screen.style.background="green";
          screen.innerText="tap";
          startTime=Date.now();
          ready=true;
-},Math.random() *1500+1000);
-screen.onclick=()=>{
-    if(!ready) return;
+},Math.random() *2000+1000);
+};
+screen.onclick=function() {
+    if(!ready)
+    {
+  
+      return;
+    }
+    
     let time=Date.now()-startTime;
     if (time < 300) {
   text.innerText = "Reaction Time: " + time + " ms 🔥 Excellent";
