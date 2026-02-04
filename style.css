@@ -11,7 +11,7 @@ body{
     display: flex;
     background: #111;
     color: white;
-    min-height:100svh;
+    min-height:100vh;
 }
 .box{
     background:rgb(0, 255, 55);
@@ -28,7 +28,9 @@ body{
     font: size 1.6em;
     border-radius: 10px;
     font-weight:bold;
-   height:140px;
+   height:120px;
+   max-height:90vh;
+   overflow-y:auto;
 
 }
 button{
@@ -37,6 +39,8 @@ button{
     border: none;
     color: black;
     background:#d4af37;
+   disply:block;
+   margin-top:15px;
 
 }
 @media screen and (max-width:600px){
@@ -61,4 +65,5 @@ button{
         align-items: center;
     }
 }
+
 
