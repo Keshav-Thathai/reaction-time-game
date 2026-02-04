@@ -11,7 +11,7 @@ body{
     display: flex;
     background: #111;
     color: white;
-    min-height:100vh;
+    min-height:100svh;
 }
 .box{
     background:rgb(0, 255, 55);
@@ -28,6 +28,7 @@ body{
     font: size 1.6em;
     border-radius: 10px;
     font-weight:bold;
+   height:140px;
 
 }
 button{
@@ -60,3 +61,4 @@ button{
         align-items: center;
     }
 }
+
